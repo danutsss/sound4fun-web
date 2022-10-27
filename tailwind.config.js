@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      border: {
+        1: "1px solid",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -42,14 +45,10 @@ module.exports = {
           50: "#FOF4F8",
         },
       },
-    },
-    screens: {
-      sm: "540px",
-      md: "720px",
-      lg: "960px",
-      xl: "1140px",
-      "2xl": "1320px",
+      screens: {
+        xs: "280px",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

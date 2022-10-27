@@ -15,6 +15,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 // Font Awesome 6 module.
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TopSectionComponent } from './shared/components/top-section/top-section.component';
+import { SelectCarComponent } from './shared/components/select-car/select-car.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TopSectionComponent } from './shared/components/top-section/top-section
     NavbarComponent,
     FooterComponent,
     TopSectionComponent,
+    SelectCarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
