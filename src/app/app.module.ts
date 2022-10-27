@@ -16,6 +16,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TopSectionComponent } from './shared/components/top-section/top-section.component';
 import { SelectCarComponent } from './shared/components/select-car/select-car.component';
+import { StarlightComponent } from './starlight/starlight.component';
+import { AmbientaleComponent } from './ambientale/ambientale.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { SelectCarComponent } from './shared/components/select-car/select-car.co
     FooterComponent,
     TopSectionComponent,
     SelectCarComponent,
+    StarlightComponent,
+    AmbientaleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
