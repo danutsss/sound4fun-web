@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Layout components.
-import { HomepageComponent } from './homepage/homepage.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { PortofolioComponent } from './portofolio/portofolio.component';
-import { AmbientaleComponent } from './ambientale/ambientale.component';
-import { StarlightComponent } from './starlight/starlight.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { PortofolioComponent } from './components/portofolio/portofolio.component';
+import { AmbientaleComponent } from './components/ambientale/ambientale.component';
+import { StarlightComponent } from './components/starlight/starlight.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
