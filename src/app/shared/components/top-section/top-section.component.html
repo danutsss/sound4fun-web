@@ -1,7 +1,7 @@
 <div class="w-full bg-grey">
     <div class="py-0 md:py-6 mx-auto px-6 container">
-        <div class="hidden md:flex md:justify-between mx-auto space-x-10">
-            <div class="hidden md:flex md:w-8/12">
+        <div class="hidden xl:flex xl:justify-between md:flex md:justify-end mx-auto space-x-10">
+            <div class="hidden xl:flex xl:w-8/12">
                 <svg xmlns="http://www.w3.org/2000/svg" width="115" height="40" viewBox="0 0 115 40" fill="none">
                     <path
                         d="M0 39.4521V12.0548H12.8311C18.8007 12.0548 22.0257 16.0959 22.0257 20.8904C22.0257 25.6849 18.7321 29.726 12.8311 29.726H5.83234V39.4521H0ZM16.1247 20.8904C16.1247 18.5617 14.4093 17.1918 12.0764 17.1918H5.83234V24.5891H12.0764C14.3407 24.5891 16.1247 23.1507 16.1247 20.8904Z"
@@ -28,10 +28,7 @@
             </div>
             <div id="mediaDiv">
                 <div class="text-2xl flex items-center" id="mediaIcon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="24" width="24" class="mr-1">
-                        <path style="fill: #F9703F;"
-                            d="M320 144c0 79.5-64.5 144-144 144S32 223.5 32 144S96.5 0 176 0s144 64.5 144 144zM176 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM144 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z" />
-                    </svg>
+                    <fa-icon [icon]="faMap" class="mr-1 text-secondary-500"></fa-icon>
                     <h6 class="font-bold">Locatie</h6>
                 </div>
                 <div id="mediaBody">
