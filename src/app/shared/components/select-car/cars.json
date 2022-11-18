@@ -1,5 +1,448 @@
 [
   {
+    "brand": "Acura",
+    "models": [
+      {
+        "name": "CSX (facelift, 2009 - 2011)",
+        "prices": [{}]
+      },
+      {
+        "name": "ILX (facelift, 2019 - prezent)",
+        "prices": [{}]
+      },
+      {
+        "name": "ILX (facelift, 2016 - 2018)",
+        "prices": [{}]
+      },
+      {
+        "name": "ILX (2013 - 2015)",
+        "prices": [{}]
+      },
+      {
+        "name": "Integra V (2022 - prezent)",
+        "prices": [{}]
+      },
+      {
+        "name": "MDX IV (2021 - prezent)",
+        "prices": [{}]
+      },
+      {
+        "name": "MDX III (facelift, 2016 - 2020)",
+        "prices": [{}]
+      },
+      {
+        "name": "MDX III (2013 - 2016",
+        "prices": [{}]
+      },
+      {
+        "name": "NSX II (2016 - prezent)",
+        "prices": [{}]
+      },
+      {
+        "name": "RDX III (facelift, 2021 - prezent)",
+        "prices": [{}]
+      },
+      {
+        "name": "RDX III (2019 - 2021)",
+        "prices": [{}]
+      },
+      {
+        "name": "RDX II (facelift, 2016 - 2018)",
+        "prices": [{}]
+      },
+      {
+        "name": "RDX II (2013 - 2015)",
+        "prices": [{}]
+      },
+      {
+        "name": "RLX (facelift, 2017 - 2020)",
+        "prices": [{}]
+      },
+      {
+        "name": "RLX (2013 - 2017)",
+        "prices": [{}]
+      },
+      {
+        "name": "TL IV (2011 - 2014)"
+      },
+      {
+        "name": "TLX II (2020 - prezent)"
+      },
+      {
+        "name": "TLX I (facelift, 2017 - 2020)"
+      },
+      {
+        "name": "TLX I (2014 - 2017)"
+      },
+      {
+        "name": "TSX (facelift, 2011 - 2014)"
+      },
+      {
+        "name": "TSX Sport Wagon (2010 - 2014)"
+      }
+    ]
+  },
+  {
+    "brand": "Alfa Romeo",
+    "models": [
+      {
+        "name": "4C (facelift, 2017 - 2019)"
+      },
+      {
+        "name": "4C Spider (2015 - 2019)"
+      },
+      {
+        "name": "4C (2013 - 2016)"
+      },
+      {
+        "name": "Giulia 952 (facelift, 2022 - prezent)"
+      },
+      {
+        "name": "Giulia 952 (2016 - 2022)"
+      },
+      {
+        "name": "Giuletta Type 940 (facelift, 2015 - 2020)"
+      },
+      {
+        "name": "Giulietta Type 940 (2010 - 2016)"
+      },
+      {
+        "name": "MiTo (2008 - 2013)"
+      },
+      {
+        "name": "MiTo (facelift, 2013 - 2016)"
+      },
+      {
+        "name": "MiTo (facelift, 2016 - 2018)"
+      },
+      {
+        "name": "Stelvio 949 (2017 - 2022)"
+      },
+      {
+        "name": "Stelvio 949 (facelift, 2022 - prezent)"
+      },
+      {
+        "name": "Tonale (2022 - prezent)"
+      }
+    ]
+  },
+  {
+    "brand": "Aston Martin",
+    "models": [
+      {
+        "name": "Cygnet (2011 - 2013)"
+      },
+      {
+        "name": "Cygnet V8 (2018 - prezent)"
+      },
+      {
+        "name": "DB11 (2016 - prezent)"
+      },
+      {
+        "name": "DB11 Volante (2018 - prezent)"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "models": [
+      {
+        "name": "A1 8X (2010 - 2014)"
+      },
+      {
+        "name": "A1 Sportback 8X (2012 - 2014)"
+      },
+      {
+        "name": "A1 Sportback 8X (facelift, 2014 - 2018)"
+      },
+      {
+        "name": "A1 8X (facelift, 2014 - 2018"
+      },
+      {
+        "name": "A1 Citycraver (2018 - 2022)"
+      },
+      {
+        "name": "A1 Sportback (2018 - prezent)"
+      },
+      {
+        "name": "A1 Allstreet (2022 - prezent)"
+      },
+      {
+        "name": "A3 Sportback 8PA (facelift, 2008 - 2013)"
+      },
+      {
+        "name": "A3 Cabrio 8P (facelift, 2008 - 2013)"
+      },
+      {
+        "name": "A3 8P (facelift, 2008 - 2013)"
+      },
+      {
+        "name": "A3 Cabrio 8V (2013 - 2016)"
+      },
+      {
+        "name": "A3 Sporback 8V (2013 - 2016)"
+      },
+      {
+        "name": "A3 Sedan 8V (2013 - 2016)"
+      },
+      {
+        "name": "A3 8V (2012 - 2016)"
+      },
+      {
+        "name": "A3 Cabrio 8V (facelift, 2016 - prezent)"
+      },
+      {
+        "name": "A3 Sportback 8V (facelift, 2016 - 2020)"
+      },
+      {
+        "name": "A3 Sedan 8V (facelift, 2016 - 2020)"
+      },
+      {
+        "name": "A3 8V (facelift, 2016 - 2017)"
+      },
+      {
+        "name": "A3 Sportback 8Y (2020 - prezent)"
+      },
+      {
+        "name": "A3 Sedan 8Y (2020 - prezent)"
+      },
+      {
+        "name": "A4 B8 (2007 - 2011)"
+      },
+      {
+        "name": "A4 Avant B8 (2008 - 2011)"
+      },
+      {
+        "name": "A4 Allroad B8 (2009 - 2011)"
+      },
+      {
+        "name": "A4 Avant B8 (facelift, 2011 - 2015)"
+      },
+      {
+        "name": "A4 B8 (facelift, 2011 - 2015)"
+      },
+      {
+        "name": "A4 B8 Allroad (facelift, 2011 - 2015)"
+      },
+      {
+        "name": "A4 Avant B9 (2015 - 2018)"
+      },
+      {
+        "name": "A4 B9 (2015 - 2018)"
+      },
+      {
+        "name": "A4 Allroad B9 (2016 - 2018)"
+      },
+      {
+        "name": "A4 Avant B9 (facelift, 2018 - 2019)"
+      },
+      {
+        "name": "A4 B9 (facelift, 2018 - 2019)"
+      },
+      {
+        "name": "A4 Allroad B9 (facelift, 2019 - prezent)"
+      },
+      {
+        "name": "A4 Avant B9 (facelift, 2019 - prezent)"
+      },
+      {
+        "name": "A4 B9 (facelift, 2019 - prezent)"
+      },
+      {
+        "name": "A5 Coupe (2007 - 2011)"
+      },
+      {
+        "name": "A5 Cabriolet (2008 - 2011)"
+      },
+      {
+        "name": "A5 Sportback (2009 - 2011)"
+      },
+      {
+        "name": "A5 Cabriolet (facelift, 2011 - 2016)"
+      },
+      {
+        "name": "A5 Coupe (facelift, 2011 - 2016)"
+      },
+      {
+        "name": "A5 Sportback (facelift, 2011 - 2016)"
+      },
+      {
+        "name": "A5 Cabriolet (2016 - 2019)"
+      },
+      {
+        "name": "A5 Coupe (2016 - 2019)"
+      },
+      {
+        "name": "A5 Sportback (2016 - 2019)"
+      },
+      {
+        "name": "A5 Cabriolet (2019 - prezent)"
+      },
+      {
+        "name": "A5 Coupe (2019 - prezent)"
+      },
+      {
+        "name": "A5 Sportback (2019 - prezent)"
+      },
+      {
+        "name": "A6 Avant (facelift, 2008 - 2011)"
+      },
+      {
+        "name": "A6 (facelift, 2008 - 2011)"
+      },
+      {
+        "name": "A6 Allroad Quattro (facelift, 2008 - 2011)"
+      },
+      {
+        "name": "A6 Avant (2011 - 2014)"
+      },
+      {
+        "name": "A6 Limousine (2011 - 2014)"
+      },
+      {
+        "name": "A6 Allroad Quattro (2012 - 2014)"
+      },
+      {
+        "name": "A6 Avant (facelift, 2014 - 2016)"
+      },
+      {
+        "name": "A6 Limousine (facelift, 2014 - 2016)"
+      },
+      {
+        "name": "A6 Allroad Quattro (facelift, 2014 - 2016)"
+      },
+      {
+        "name": "A6 Avant (facelift, 2016 - 2018)"
+      },
+      {
+        "name": "A6 Limousine (facelift, 2016 - 2018)"
+      },
+      {
+        "name": "A6 Allroad Quattro (facelift, 2016 - 2018)"
+      },
+      {
+        "name": "A6 Avant (2018 - prezent)"
+      },
+      {
+        "name": "A6 Limousine (2018 - prezent)"
+      },
+      {
+        "name": "A6 Allroad Quattro (2019 - prezent)"
+      },
+      {
+        "name": "A6 Long (2019 - prezent)"
+      },
+      {
+        "name": "A6 E-TRON (2021 - prezent)"
+      },
+      {
+        "name": "A7 Sportback (2010 - 2014)"
+      },
+      {
+        "name": "A7 Sportback (facelift, 2014 - 2018)"
+      },
+      {
+        "name": "A7 Sportback (2017 - prezent)"
+      },
+      {
+        "name": "A8 Long (2010 - 2013)"
+      },
+      {
+        "name": "A8 (2010 - 2013)"
+      },
+      {
+        "name": "A8 Long (2013 - 2017)"
+      },
+      {
+        "name": "A8 (2013 - 2017)"
+      },
+      {
+        "name": "A8 Long (2017 - 2021)"
+      },
+      {
+        "name": "A8 (2017 - 2021)"
+      },
+      {
+        "name": "A8 Long (2021 - prezent"
+      },
+      {
+        "name": "A8 Long (2021 - prezent)"
+      },
+      {
+        "name": "E-TRON (2018 - prezent)"
+      },
+      {
+        "name": "E-TRON Sportback (2020 - prezent)"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "models": [
+      {
+        "name": "Seria 1 Cabriolet (2008 - 2011)"
+      },
+      {
+        "name": "Seria 1 Coupe (2007 - 2011)"
+      },
+      {
+        "name": "Seria 1 Hatchback (2007 - 2011)"
+      },
+      {
+        "name": "Seria 1 Coupe (facelift, 2011 - 2013)"
+      },
+      {
+        "name": "Seria 1 Cabriolet (facelift, 2011 - 2013)"
+      },
+      {
+        "name": "Seria 1 Hatcback (2011 - 2015)"
+      },
+      {
+        "name": "Seria 1 Hatchback (2012 - 2015)"
+      },
+      {
+        "name": "Seria 1 Hatchback (facelift, 2015 - 2017)"
+      },
+      {
+        "name": "Seria 1 Hatchback (facelift, 2017 - 2019)"
+      },
+      {
+        "name": "Seria 1 Sedan (2017 - prezent)"
+      },
+      {
+        "name": "Seria 1 Hatchback (2019 - prezent)"
+      },
+      { "name": "Seria 2 Coupe (2014 - 2017)" },
+      { "name": "Seria 2 Active Tourer (2014 - 2018)" },
+      { "name": "Seria 2 Cabriolet (2015 - 2017)" },
+      { "name": "Seria 2 Gran Tourer (2015 - 2018)" },
+      { "name": "Seria 2 Coupe (facelift, 2017 - 2021)" },
+      { "name": "Seria 2 Cabriolet (facelift, 2017 - 2021)" },
+      { "name": "Seria 2 Active Tourer (facelift, 2018 - 2021)" },
+      { "name": "Seria 2 Gran Tourer (facelift, 2018 - prezent)" },
+      { "name": "Seria 2 Gran Coupe (facelift, 2019 - prezent)" },
+      { "name": "Seria 2 Active Tourer (2021 - prezent)" },
+      { "name": "Seria 2 Coupe (2021 - prezent)" },
+      { "name": "Seria 3 Coupe (2006 - 2010)" },
+      { "name": "Seria 3 Cabriolet (2007 - 2010)" },
+      { "name": "Seria 3 Sedan (facelift, 2008 - 2012)" },
+      { "name": "Seria 3 Touring (facelift, 2008 - 2012)" },
+      { "name": "Seria 3 Coupe (facelift, 2010 - 2013)" },
+      { "name": "Seria 3 Cabriolet (facelift, 2010 - 2013)" },
+      { "name": "Seria 3 Sedan (2011 - 2015)" },
+      { "name": "Seria 3 Touring (2012 - 2015)" },
+      { "name": "Seria 3 Gran Turismo (2013 - 2016)" },
+      { "name": "Seria 3 Sedan (facelift, 2015 - 2018)" },
+      { "name": "Seria 3 Touring (facelift, 2015 - 2019)" },
+      { "name": "Seria 3 Gran Turismo (facelift, 2016 - 2020)" },
+      { "name": "Seria 3 Sedan (2018 - 2022)" },
+      { "name": "Seria 3 Touring (2019 - 2022)" },
+      { "name": "Seria 3 Sedan Long (2019 - prezent)" },
+      { "name": "Seria 3 Touring (facelift, 2022 - prezent)" },
+      { "name": "Seria 3 Sedan (facelift, 2022 - prezent)" }
+    ]
+  },
+  {
     "brand": "Seat",
     "models": [
       {
