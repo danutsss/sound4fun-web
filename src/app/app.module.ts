@@ -19,9 +19,6 @@ import { AmbientaleComponent } from './components/ambientale/ambientale.componen
 import { TopSectionComponent } from './shared/components/top-section/top-section.component';
 import { ShowCarInfoComponent } from './shared/components/show-car-info/show-car-info.component';
 
-// Font Awesome 6 module.
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 // Angular Material modules.
 import { MatDialogModule } from '@angular/material/dialog';
 
@@ -44,7 +41,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FontAwesomeModule,
     FormsModule,
     MatDialogModule,
   ],
