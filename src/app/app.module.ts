@@ -18,9 +18,11 @@ import { StarlightComponent } from './components/starlight/starlight.component';
 import { AmbientaleComponent } from './components/ambientale/ambientale.component';
 import { TopSectionComponent } from './shared/components/top-section/top-section.component';
 import { ShowCarInfoComponent } from './shared/components/show-car-info/show-car-info.component';
+import { RecenziiComponent } from './components/recenzii/recenzii.component';
 
 // Angular Material modules.
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     StarlightComponent,
     AmbientaleComponent,
     ShowCarInfoComponent,
+    RecenziiComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     FormsModule,
     MatDialogModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

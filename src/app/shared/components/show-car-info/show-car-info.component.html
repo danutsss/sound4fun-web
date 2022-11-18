@@ -1,6 +1,33 @@
-<div align="center">
-    <div mat-dialog-title class="d-flex justify-content-between">
-        <h2>Informatii model</h2>
-        <button mat-dialog-close>close</button>
+<div align="center" class="p-6">
+    <div class="flex flex-row justify-between mb-4">
+        <h1 class="text-2xl font-bold">Informatii {{ brand }} {{ model }}</h1>
+        <button mat-icon-button mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <div>
+        <p class="mb-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione adipisci, labore eveniet culpa incidunt
+            hic,
+            voluptatem dolores dignissimos, rem odio non quaerat repellat est atque accusantium sapiente. Expedita rem
+            assumenda ipsa, ad tenetur qui praesentium corrupti incidunt? Illum sequi amet blanditiis? Soluta repellat
+            nulla
+            aut ratione ab. Debitis, reprehenderit earum.
+        </p>
+
+        <div>
+            <h1 class="text-2xl font-bold mb-2">Preturi:</h1>
+
+            <div *ngFor="let prices of information.prices">
+                <p *ngFor="let price of prices | keyvalue">
+                    <span class="font-bold">{{ price.key }}:</span> {{ price.value }}RON
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+        <img *ngFor="let image of information.images" src="{{ image }}" />
     </div>
 </div>

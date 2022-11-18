@@ -34,15 +34,25 @@ export class SelectCarComponent implements OnInit {
 
   showInfo(brand: string, model: string) {
     if (this.isDialogOpened) return;
-    this.isDialogOpened;
+    if (
+      this.selectedManufacturer === 'noneBrand' ||
+      this.selectedModel === 'noneModel'
+    )
+      return alert('selecteaza un brand si model de autovehicul.');
+    this.isDialogOpened = true;
 
     this.dialogRef = this.dialog.open(ShowCarInfoComponent, {
-      width: '500px',
-      height: '750px',
+      width: '900px',
+      height: '350',
     });
 
-    this.dialogRef
-      .afterClosed()
-      .subscribe((result: any) => (this.isDialogOpened = false));
+    this.dialogRef.componentInstance.brand = brand;
+    this.dialogRef.componentInstance.model = model;
+
+    this.dialogRef.afterClosed().subscribe((result: any) => {
+      this.isDialogOpened = false;
+      this.selectedManufacturer = 'noneBrand';
+      this.selectedModel = 'noneModel';
+    });
   }
 }

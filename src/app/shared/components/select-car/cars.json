@@ -4,15 +4,36 @@
     "models": [
       {
         "name": "Alhambra",
-        "price": 2500
+        "prices": [
+          {
+            "Lumini ambientale": 2500,
+            "Plafon starlight": 3000
+          }
+        ],
+        "images": [
+          "../../../../assets/images/rectangle2.jpg",
+          "../../../../assets/images/rectangle2.jpg",
+          "../../../../assets/images/rectangle2.jpg",
+          "../../../../assets/images/rectangle2.jpg"
+        ]
       },
       {
         "name": "Leon",
-        "price": 2500
+        "prices": [
+          {
+            "Lumini ambientale": 2500,
+            "Plafon starlight": 3000
+          }
+        ]
       },
       {
         "name": "Leon ST",
-        "price": 2500
+        "prices": [
+          {
+            "Lumini ambientale": 2500,
+            "Plafon starlight": 3000
+          }
+        ]
       }
     ]
   },
@@ -21,7 +42,12 @@
     "models": [
       {
         "name": "Logan",
-        "price": 2500
+        "prices": [
+          {
+            "Lumini ambientale": 2500,
+            "Plafon starlight": 3000
+          }
+        ]
       }
     ]
   }
