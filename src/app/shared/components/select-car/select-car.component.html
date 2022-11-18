@@ -10,19 +10,21 @@
 
     <div class="py-10 px-5 rounded-xl mx-auto md:w-2/3 bg-transparent/10">
         <div class="md:flex md:justify-center xs:block xs:text-center">
-            <select class="form-select xs:w-2/3 md:w-1/3 mr-2 mx-auto xs:mb-2 md:mb-0 rounded-sm">
-                <option value="1">Producator</option>
-                <option value="2">Producator</option>
-                <option value="3">Producator</option>
+            <select [(ngModel)]="selectedManufacturer" (change)="setManufacturer($event)"
+                class="form-select xs:w-2/3 md:w-1/3 mr-2 mx-auto xs:mb-2 md:mb-0 rounded-sm">
+                <option value="noneBrand" disabled>Alege brand</option>
+                <option *ngFor="let car of Cars" value="{{ car.brand }}">{{ car.brand }}</option>
             </select>
-            <select class="form-select xs:w-2/3 md:w-1/3 mr-2 mx-auto xs:mb-2 md:mb-0 rounded-sm">
-                <option value="1">Model</option>
-                <option value="2">Model</option>
-                <option value="3">Model</option>
+            <select [(ngModel)]="selectedModel"
+                class="form-select xs:w-2/3 md:w-1/3 mr-2 mx-auto xs:mb-2 md:mb-0 rounded-sm">
+                <option value="noneModel" disabled>Alege model</option>
+                <option *ngFor="let model of manufacturerModels" value="{{ model.name }}">{{
+                    model.name }}</option>
             </select>
 
             <button
-                class="xs:p-2 uppercase mx-auto w-1/3 hover:bg-primary-600 hover:border-primary-600 bg-primary-700 border-2 border-primary-700 transition-all py-2 px-8 lg:py-2 lg:px-8 rounded-sm  text-white text-sm md:text-lg f-f-p">Cauta</button>
+                class="xs:p-2 uppercase mx-auto w-1/3 hover:bg-primary-600 hover:border-primary-600 bg-primary-700 border-2 border-primary-700 transition-all py-2 px-8 lg:py-2 lg:px-8 rounded-sm  text-white text-sm md:text-lg f-f-p"
+                (click)="showInfo(selectedManufacturer, selectedModel)">Cauta</button>
         </div>
     </div>
 </section>

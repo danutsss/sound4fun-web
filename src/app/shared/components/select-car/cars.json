@@ -1,0 +1,28 @@
+[
+  {
+    "brand": "Seat",
+    "models": [
+      {
+        "name": "Alhambra",
+        "price": 2500
+      },
+      {
+        "name": "Leon",
+        "price": 2500
+      },
+      {
+        "name": "Leon ST",
+        "price": 2500
+      }
+    ]
+  },
+  {
+    "brand": "Dacia",
+    "models": [
+      {
+        "name": "Logan",
+        "price": 2500
+      }
+    ]
+  }
+]

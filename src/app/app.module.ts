@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Layout components.
 import { HomepageComponent } from './components/homepage/homepage.component';
@@ -14,10 +16,14 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { SelectCarComponent } from './shared/components/select-car/select-car.component';
 import { StarlightComponent } from './components/starlight/starlight.component';
 import { AmbientaleComponent } from './components/ambientale/ambientale.component';
+import { TopSectionComponent } from './shared/components/top-section/top-section.component';
+import { ShowCarInfoComponent } from './shared/components/show-car-info/show-car-info.component';
 
 // Font Awesome 6 module.
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TopSectionComponent } from './shared/components/top-section/top-section.component';
+
+// Angular Material modules.
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -32,8 +38,16 @@ import { TopSectionComponent } from './shared/components/top-section/top-section
     SelectCarComponent,
     StarlightComponent,
     AmbientaleComponent,
+    ShowCarInfoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    FormsModule,
+    MatDialogModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
