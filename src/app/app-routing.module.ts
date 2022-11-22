@@ -8,7 +8,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PortofolioComponent } from './components/portofolio/portofolio.component';
 import { AmbientaleComponent } from './components/ambientale/ambientale.component';
 import { StarlightComponent } from './components/starlight/starlight.component';
-import { RecenziiComponent } from './components/recenzii/recenzii.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -17,7 +16,6 @@ const routes: Routes = [
   { path: 'portofolio', component: PortofolioComponent },
   { path: 'ambientale', component: AmbientaleComponent },
   { path: 'starlight', component: StarlightComponent },
-  { path: 'recenzii', component: RecenziiComponent },
 ];
 
 @NgModule({

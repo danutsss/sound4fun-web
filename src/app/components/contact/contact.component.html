@@ -32,6 +32,8 @@
     </div>
 
     <div class="w-1/2 sm:w-2/5 mb-8 m-auto flex items-center overflow-hidden" id="googleMaps">
-        <img src="../../../assets/images/google-maps.png" alt="google-maps" />
+        <google-map [center]="center">
+            <map-marker [position]="markerPos"></map-marker>
+        </google-map>
     </div>
 </section>

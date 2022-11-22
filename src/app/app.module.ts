@@ -18,11 +18,13 @@ import { StarlightComponent } from './components/starlight/starlight.component';
 import { AmbientaleComponent } from './components/ambientale/ambientale.component';
 import { TopSectionComponent } from './shared/components/top-section/top-section.component';
 import { ShowCarInfoComponent } from './shared/components/show-car-info/show-car-info.component';
-import { RecenziiComponent } from './components/recenzii/recenzii.component';
 
 // Angular Material modules.
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+
+// Angular Google Maps module.
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,6 @@ import { MatIconModule } from '@angular/material/icon';
     StarlightComponent,
     AmbientaleComponent,
     ShowCarInfoComponent,
-    RecenziiComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +48,7 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatDialogModule,
     MatIconModule,
+    GoogleMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

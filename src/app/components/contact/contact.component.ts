@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
-// Font Awesome icons.
-import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faMap } from '@fortawesome/free-regular-svg-icons';
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  faPhoneSquare = faPhoneSquare;
-  faEnvelope = faEnvelope;
-  faMap = faMap;
-
+  markerPos: any;
+  center: google.maps.LatLngLiteral = {
+    lat: 44.14005689752779,
+    lng: 28.610037174878265,
+  };
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.markerPos = new google.maps.LatLng(
+      44.14005689752779,
+      28.610037174878265
+    );
+  }
 }
