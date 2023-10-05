@@ -25,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 // Angular Google Maps module.
 import { GoogleMapsModule } from '@angular/google-maps';
+import { IndexComponent } from './components/index/index.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     StarlightComponent,
     AmbientaleComponent,
     ShowCarInfoComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,

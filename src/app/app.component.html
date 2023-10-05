@@ -1,12 +1,12 @@
-<header>
-  <app-top-section></app-top-section>
-  <app-navbar></app-navbar>
+<header *ngIf="router.url !== '/'">
+    <app-top-section></app-top-section>
+    <app-navbar></app-navbar>
 </header>
 
 <main>
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </main>
 
-<footer>
-  <app-footer></app-footer>
+<footer *ngIf="router.url !== '/'">
+    <app-footer></app-footer>
 </footer>
