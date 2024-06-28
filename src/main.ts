@@ -1,19 +1,14 @@
-import "@/assets/main.css";
-
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
 import App from "@/App.vue";
 import router from "@/router";
 
-/* import the fontawesome core */
-import { library } from "@fortawesome/fontawesome-svg-core";
+/* import styles */
+import "@/assets/styles/main.css";
 
-/* import font awesome icon component */
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-/* add icons to the library */
-library.add();
+/* import font awesome loader */
+import { FontAwesomeIcon } from "@/utils/faIconsLoader";
 
 const app = createApp(App);
 
