@@ -5,9 +5,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import icons */
-import { faSquarePhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faSquarePhone, faLocationDot, faBars } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faSquarePhone, faLocationDot);
+library.add(faSquarePhone, faLocationDot, faBars);
 
 export { FontAwesomeIcon };
