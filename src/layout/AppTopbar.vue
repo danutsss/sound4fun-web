@@ -34,7 +34,7 @@
 					</div>
 
 					<div id="phoneInfo">
-						<p class="text-gray-400">0771 345 939</p>
+						<p class="text-gray-400">+40 771 345 939</p>
 					</div>
 				</div>
 			</div>
