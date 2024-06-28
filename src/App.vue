@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 /* import Vue dependencies */
-import { computed } from "vue";
+import { computed, ref, type Ref } from "vue";
 import { useRoute, type Router } from "vue-router";
 
 /* import layout components */

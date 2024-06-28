@@ -51,7 +51,11 @@
 				</select>
 
 				<button
-					class="xs:p-2 uppercase mx-auto w-1/3 hover:bg-primary-600 hover:border-primary-600 bg-primary-700 border-2 border-primary-700 transition-all py-2 px-8 lg:py-2 lg:px-8 rounded-sm text-white text-sm md:text-lg"
+					class="xs:p-2 uppercase mx-auto w-1/3 bg-primary-700 border-2 border-primary-700 transition-all py-2 px-8 lg:py-2 lg:px-8 rounded-sm text-white text-sm md:text-lg"
+					:class="{
+						'hover:bg-primary-600 hover:border-primary-600': !disabled,
+						'opacity-50 cursor-not-allowed': disabled,
+					}"
 					@click="showInfo(selectedManufacturer, selectedModel)"
 					:disabled="
 						selectedManufacturer === 'none' || selectedModel === 'none' || isModalOpened
@@ -62,24 +66,38 @@
 			</div>
 		</div>
 	</section>
+
+	<div v-if="isModalOpened">
+		<CarInfoModal />
+	</div>
 </template>
 
 <script setup lang="ts">
 /* import Vue modules */
-import { ref, type Ref } from "vue";
+import { ref, computed, type Ref } from "vue";
 
 /* import `Car` interface & cars database */
 import Car from "@/utils/interfaces/Car";
 import CarModel from "@/utils/interfaces/CarModel";
 import carData from "@/data/carsDb.json";
 
+/* import components */
+import CarInfoModal from "@/components/CarInfoModal.vue";
+
 const availableCars: Ref<Car[]> = ref<Car[]>(carData as Car[]);
 const selectedManufacturer: Ref<string> = ref<string>("none");
 
 const manufacturerModels: Ref<CarModel[]> = ref<CarModel[]>(null);
-const selectedModel: Ref<CarModel> = ref<CarModel>("none");
+const selectedModel: Ref<string> = ref<string>("none");
 
 const isModalOpened: Ref<boolean> = ref<boolean>(false);
+
+const disabled = computed(
+	() =>
+		selectedManufacturer.value === "none" ||
+		selectedModel.value === "none" ||
+		isModalOpened.value,
+);
 
 /* component methods */
 const setManufacturer = (event: Event) => {
@@ -100,19 +118,11 @@ const setModel = (event: Event) => {
 	const modelName = target.value;
 
 	selectedModel.value = manufacturerModels.value.find(
-		(model: CarModel) => model.name === modelName.value,
+		(model: CarModel) => model.name === modelName,
 	);
 };
 
-const showInfo = (selectedManufacturer: string, selectedModel: CarModel) => {
-	// if (
-	// 	isModalOpened.value ||
-	// 	selectedManufacturer.value === "none" ||
-	// 	selectedModel.value === "none"
-	// ) {
-	// 	return alert("selecteaza un producator auto si modelul dorit.");
-	// }
-
+const showInfo = (selectedManufacturer: string, selectedModel: string) => {
 	console.log("producator", selectedManufacturer);
 	console.log("model", selectedModel);
 };

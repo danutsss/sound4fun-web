@@ -106,7 +106,7 @@
 </template>
 
 <script setup lang="ts">
-/* import Vue requisites */
+/* import Vue modules */
 import { ref, type Ref } from "vue";
 import { useRouter, type Router } from "vue-router";
 
