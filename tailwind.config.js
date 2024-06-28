@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
 	content: ["./index.html", "./src/**/*.{vue, js, ts}"],
 	theme: {
 		extend: {
@@ -45,7 +46,10 @@ export default {
 					50: "#FOF4F8",
 				},
 			},
+			screens: {
+				xs: "280px",
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/forms")],
 };
