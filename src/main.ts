@@ -1,12 +1,26 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import "@/assets/main.css";
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 
-if (environment.production) {
-  enableProdMode();
-}
+import App from "@/App.vue";
+import router from "@/router";
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+/* import the fontawesome core */
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+/* add icons to the library */
+library.add();
+
+const app = createApp(App);
+
+app.use(createPinia());
+app.use(router);
+
+/* add custom components */
+app.component("font-awesome-icon", FontAwesomeIcon);
+
+app.mount("#app");
